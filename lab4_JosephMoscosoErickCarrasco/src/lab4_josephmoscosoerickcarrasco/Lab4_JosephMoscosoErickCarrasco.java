@@ -68,6 +68,21 @@ public class Lab4_JosephMoscosoErickCarrasco {
                 + ".......................:=@@@+-.+@@#:...+*.....-@WW=........\n"
                 + "\n"
                 + "................................................:WW........");
+        String[][] Radar1 = {{" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "},
+        {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "}};
+        
+        Radar1 = asign(Radar1);
+        
         int c = 1;
         while (c == 1) {
             System.out.println("------------------------------------------------------");
@@ -135,6 +150,41 @@ public class Lab4_JosephMoscosoErickCarrasco {
         pil.add(new Piloto("Mord", 19, "Elias","XP", "X-R Echelon", 65.3, ev.get(6)));
         pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(7)));
         pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(8)));
+    }
+    
+    public static void ImpMatrix(String Matriz[][], int filas, int columnas){
+        
+        if (filas== Matriz.length-1 && columnas == Matriz[0].length-1) {
+            System.out.println("[ "+Matriz[filas][columnas]+ " ]");
+            
+        } else {
+            if (columnas == Matriz[0].length-1) {
+                System.out.println("[ "+Matriz[filas][columnas]+ " ]");
+                ImpMatrix(Matriz,filas+1,0);
+            } else {
+                System.out.print("[ "+Matriz[filas][columnas]+ " ]");
+                ImpMatrix(Matriz, filas, columnas +1);
+            }
+        }
+    }
+    
+    public static String [][] asign(String[][]radar){
+        
+        //
+        radar [0][2] = "R";
+        radar [0][7] = "R";
+        radar [1][1] = "Z";
+        radar [1][8] = "Z";
+        radar [1][4] = "S";
+        radar [1][5] = "S";
+        radar [3][2] = "Z";
+        radar [3][7] = "Z";
+        
+        radar[9][0] = "PM";
+        radar[9][2] = "PM";
+        radar[9][3] = "EV0";
+        radar[9][4] = "EV1";
+        return radar;
     }
 
 }
