@@ -120,14 +120,13 @@ public class Lab4_JosephMoscosoErickCarrasco {
                     + "2-Lista de Angeles \n"
                     + "3-Lista de Pilotos \n"
                     + "4-Simulación \n"
-                    + "5-Salir \n");
+                    + "5-Salir");
             System.out.println("------------------------------------------------------");
             int v= 1;
             while (v==1) {
                 try {
                     System.out.print("Ingrese un numero correspondiente a la opcion: ");
                     op = sc.nextInt();
-                    
                     v=2;
                 } catch (InputMismatchException e) {
                     System.out.println("ERROR IN DATA");
