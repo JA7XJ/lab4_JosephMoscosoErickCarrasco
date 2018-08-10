@@ -96,12 +96,25 @@ public class Lab4_JosephMoscosoErickCarrasco {
             int op = sc.nextInt();
             System.out.println("------------------------------------------------------");
             if (op == 1) {
-
+                System.out.println("------------------------------------------------------");
+                for (int i = 0; i < ev.size(); i++) {
+                    System.out.println(i+")"+ev.get(i));
+                }
+                System.out.println("------------------------------------------------------");
             }
             if (op == 2) {
-
+                System.out.println("------------------------------------------------------");
+                for (int i = 0; i < an.size(); i++) {
+                    System.out.println(i+")"+an.get(i));
+                }
+                System.out.println("------------------------------------------------------");
             }
             if (op == 3) {
+                System.out.println("------------------------------------------------------");
+                for (int i = 0; i < pil.size(); i++) {
+                    System.out.println(i+")"+pil.get(i));
+                }
+                System.out.println("------------------------------------------------------");
                 /*System.out.println("1-Listar\n"
                         + "2-Modificar datos\n"
                         + "3-Eliminar\n"
