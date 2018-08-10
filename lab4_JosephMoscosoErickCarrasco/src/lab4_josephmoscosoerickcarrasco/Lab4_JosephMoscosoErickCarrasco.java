@@ -47,7 +47,14 @@ public class Lab4_JosephMoscosoErickCarrasco {
         pil.add(new Piloto("Mord", 19, "Elias","XP", "X-R Echelon", 65.3, ev.get(6)));
         pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(7)));
         
-        an.add(new Angeles(Color.CYAN, "Elemental", "Plateado", "12424.323 Deca Cycle", "Ay-WX", ))
+        an.add(new ramiel(Color.CYAN, "Elemental", "Plateado", "12424.323 Deca Cycles", "Ay-WX","Vuela", 9000000 ));
+        an.add(new ramiel(Color.black, "Phazon-T1", "Blue-ish red", "2.82 Penta Cycles", "Kos","Vuela", 18000000 ));
+        an.add(new zeruel(Color.DARK_GRAY, "ICE SPEARS", "White gray", "49.7 Deca Cycles", "XR-Syron","No vuela", 60000 ));
+        an.add(new zeruel(Color.GREEN, "Mechanoid", "Black", "38.7 Deca Cycles", "EP-Hydra","Vuela", 8090000 ));
+        an.add(new zeruel(Color.blue, "Magnetic Aura", "cyan", "32 Nona Cycles", "CY- SMK","No vuela", 108200000 ));
+        an.add(new zeruel(Color.green, "Kinesis", "White purple", "102.7 Deca Cycles", "ELIXEX","No vuela", 9000 ));
+        an.add(new sachiel(Color.red, "Magma", "Dark Red", "43 Octa Cycles", "XT-Kryp","No vuela", 21460000 ));
+        an.add(new sachiel(Color.magenta, "Ultrafrigid Breath", "Red", "88 Hexa Cycles", "FT-Pryp","Vuela", 12460000 ));
         
         
         ev.get(0).setPiloto(pil.get(0));
