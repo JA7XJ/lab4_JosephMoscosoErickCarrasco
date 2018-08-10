@@ -47,6 +47,8 @@ public class Lab4_JosephMoscosoErickCarrasco {
         pil.add(new Piloto("Mord", 19, "Elias","XP", "X-R Echelon", 65.3, ev.get(6)));
         pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(7)));
         
+        an.add(new Angeles(Color.CYAN, "Elemental", "Plateado", "12424.323 Deca Cycle", "Ay-WX", ))
+        
         
         ev.get(0).setPiloto(pil.get(0));
         ev.get(1).setPiloto(pil.get(1));
