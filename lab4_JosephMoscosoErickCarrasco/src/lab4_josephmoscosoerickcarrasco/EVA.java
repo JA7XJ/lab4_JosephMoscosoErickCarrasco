@@ -119,7 +119,7 @@ public abstract class EVA {
     public String toString() {
         return "EVA{" + "color=" + color + ", productionDate=" + productionDate + ", altura=" + altura + ", alma=" + alma + ", ojos=" + ojos + ", pais=" + pais + ", serie=" + serie + ", porcentajedamage=" + porcentajedamage + '}';
     }
-    public abstract void movimiento();
-    public abstract void atacar();
+    public abstract String[][] movimiento(String[][] x);
+    public abstract String[][] atacar(String[][] x);
     
 }

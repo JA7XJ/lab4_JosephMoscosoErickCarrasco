@@ -93,6 +93,6 @@ public abstract class Angeles {
     public String toString() {
         return "Angeles{" + "color=" + color + ", descripcione=" + descripcione + ", colorsangre=" + colorsangre + ", fecha=" + fecha + ", nombre=" + nombre + ", volar=" + volar + ", potencia=" + potencia + '}';
     }
-    public abstract void movimiento();
-    public abstract void atacar();
+    public abstract String[][] movimiento(String[][] x);
+    public abstract String[][] atacar(String[][] x);
 }
