@@ -7,6 +7,7 @@ package lab4_josephmoscosoerickcarrasco;
 
 import java.awt.Color;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -112,15 +113,27 @@ public class Lab4_JosephMoscosoErickCarrasco {
         
         int c = 1;
         while (c == 1) {
+            int op=0;
+            
             System.out.println("------------------------------------------------------");
-            System.out.println("1-Lista de EVAs "
-                    + "2-Lista de Angeles "
-                    + "3-Lista de Pilotos"
-                    + "4-Simulación "
-                    + "5-Salir");
+            System.out.println("1-Lista de EVAs \n"
+                    + "2-Lista de Angeles \n"
+                    + "3-Lista de Pilotos \n"
+                    + "4-Simulación \n"
+                    + "5-Salir \n");
             System.out.println("------------------------------------------------------");
-            System.out.print("Ingrese un numero correspondiente a la opcion: ");
-            int op = sc.nextInt();
+            int v= 1;
+            while (v==1) {
+                try {
+                    System.out.print("Ingrese un numero correspondiente a la opcion: ");
+                    op = sc.nextInt();
+                    
+                    v=2;
+                } catch (InputMismatchException e) {
+                    System.out.println("ERROR IN DATA");
+                    v=1;
+                }
+            }
             System.out.println("------------------------------------------------------");
             if (op == 1) {
                 System.out.println("------------------------------------------------------");
@@ -242,5 +255,6 @@ public class Lab4_JosephMoscosoErickCarrasco {
         
         return radar;
     }
+
 
 }
