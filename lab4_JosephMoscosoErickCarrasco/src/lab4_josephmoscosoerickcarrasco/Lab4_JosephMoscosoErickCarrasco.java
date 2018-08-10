@@ -128,7 +128,18 @@ public class Lab4_JosephMoscosoErickCarrasco {
                 }*/
             }
             if (op == 4) {
-
+                //SIMULACION
+                int lives1 = 8;
+                int lives2 = 8;
+                boolean simulador=true;
+                int turn = 1;
+                do{
+                    if (turn == 1) {
+                        System.out.println("User 1 turns");
+                        
+                    }
+                    
+                }while(simulador);
             }
             if (op == 5) {
                 c = 0;
