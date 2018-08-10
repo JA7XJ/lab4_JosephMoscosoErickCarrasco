@@ -30,7 +30,14 @@ public class eva00 extends EVA {
         for (int i = 0; i < z.length; i++) {
             for (int j = 0; j < z[0].length; j++) {
                 if (y == i && x == j) {
-                    
+                    if (y == i + 1 && x == j + 1 && z[i][j].equals("R") || z[i][j].equals("R") || z[i][j].equals("Z") || z[i][j].equals("Z")
+                            || z[i][j].equals("S") || z[i][j].equals("S") || z[i][j].equals("Z") || z[i][j].equals("Z")
+                            || z[i][j].equals("PM") || z[i][j].equals("PM") || z[i][j].equals("EV0") || z[i][j].equals("EV1") || z[i][j].equals("EV2")
+                            || z[i][j].equals("EV0") || z[i][j].equals("PM") || z[i][j].equals("PM")) {
+                        z[i][j] = "EV0";
+                    } else {
+                        System.out.println("Error, posicion incorrecta");
+                    }
                 }
             }
         }
@@ -39,7 +46,14 @@ public class eva00 extends EVA {
 
     @Override
     public String[][] atacar(String[][] z, int x, int y) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i < z.length; i++) {
+            for (int j = 0; j < z[0].length; j++) {
+                if (y == i && x == j) {
+                    
+                }
+            }
+        }
+        return z;
     }
 
 }
