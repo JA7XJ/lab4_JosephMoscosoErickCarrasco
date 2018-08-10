@@ -184,6 +184,11 @@ public class Lab4_JosephMoscosoErickCarrasco {
         radar[9][2] = "PM";
         radar[9][3] = "EV0";
         radar[9][4] = "EV1";
+        radar[9][5] = "EV2";
+        radar[9][6] = "EV0";
+        radar[9][7] = "PM";
+        radar[9][9] = "PM";
+        
         return radar;
     }
 
