@@ -27,6 +27,16 @@ public class Lab4_JosephMoscosoErickCarrasco {
         // TODO code application logic here
         //inicializar();
         ev.add(new eva01(Color.BLACK, 2, 20, "Ella", 6, "Honduras", 323, 2));
+        ev.add(new eva00(Color.darkGray, 2, 30, "ESHTA", 9, "Wakanda", 243, 21));
+        ev.add(new eva00(Color.gray, 12, 50, "RODRIX", 10, "EL Salvador", 543, 34));
+        ev.add(new eva02(Color.MAGENTA, 5, 30, "DIEGO", 15, "MALAZUELA", 432, 10));
+        ev.add(new  evapm(Color.WHITE, 11, 25, "Elmeromero", 20, "Gringolandia", 432,10));
+        ev.add(new  evapm(Color.CYAN, 30, 55, "CUACK CUACK", 19, "Chile", 502,40));
+        ev.add(new  evapm(Color.red, 4, 85, "ISIS", 20, "Gringolandia", 432,10));
+        ev.add(new  evapm(Color.yellow, 1, 49, "ARIEL", 20, "Elysium", 928,80));
+        
+        
+        
         pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(0)));
         pil.add(new Piloto("Elmer", 37, "Chorro","Stale", "Pro-Alpha", 95.3, ev.get(1)));
         pil.add(new Piloto("Fryden", 28, "Pejelagarto","Ed", "Archive type 3", 34.9, ev.get(2)));
@@ -35,7 +45,12 @@ public class Lab4_JosephMoscosoErickCarrasco {
         pil.add(new Piloto("Props", 44, "Chicken","CJ", "Smokemouth", 31.8, ev.get(5)));
         pil.add(new Piloto("Mord", 19, "Elias","XP", "X-R Echelon", 65.3, ev.get(6)));
         pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(7)));
-        pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(8)));
+        
+        
+        ev.get(0).setPiloto(pil.get(0));
+        ev.get(1).setPiloto(pil.get(1));
+        ev.get(2).setPiloto(pil.get(4));
+        ev.get(3).setPiloto(pil.get(5));
         
         System.out.println("Bienvenido a Nerv");
         System.out.println("------------------------------------------------------");
