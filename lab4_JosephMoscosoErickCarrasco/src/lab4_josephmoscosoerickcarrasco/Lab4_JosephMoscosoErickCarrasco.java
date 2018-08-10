@@ -5,6 +5,7 @@
  */
 package lab4_josephmoscosoerickcarrasco;
 
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,7 +25,18 @@ public class Lab4_JosephMoscosoErickCarrasco {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        inicializar();
+        //inicializar();
+        ev.add(new eva01(Color.BLACK, 2, 20, "Ella", 6, "Honduras", 323, 2));
+        pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(0)));
+        pil.add(new Piloto("Elmer", 37, "Chorro","Stale", "Pro-Alpha", 95.3, ev.get(1)));
+        pil.add(new Piloto("Fryden", 28, "Pejelagarto","Ed", "Archive type 3", 34.9, ev.get(2)));
+        pil.add(new Piloto("Joshua", 20, "Braulix","Suazzo", "PSM Elite", 88.7, ev.get(3)));
+        pil.add(new Piloto("Carl", 29, "Dane","Elixius", "RP Echo", 78.2, ev.get(4)));
+        pil.add(new Piloto("Props", 44, "Chicken","CJ", "Smokemouth", 31.8, ev.get(5)));
+        pil.add(new Piloto("Mord", 19, "Elias","XP", "X-R Echelon", 65.3, ev.get(6)));
+        pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(7)));
+        pil.add(new Piloto("Rocho", 34, "Transa","Joseph", "X-R Echelon", 65.3, ev.get(8)));
+        
         System.out.println("Bienvenido a Nerv");
         System.out.println("------------------------------------------------------");
         System.out.println("............................-*@WWWWWWWWWWWW+...............\n"
