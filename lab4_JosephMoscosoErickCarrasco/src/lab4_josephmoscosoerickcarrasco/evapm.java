@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author Joseph
  */
-public class evapm extends EVA{
+public class evapm extends EVA {
 
     public evapm() {
         super();
@@ -25,8 +25,15 @@ public class evapm extends EVA{
     public String[][] movimiento(String[][] z, int x, int y) {
         for (int i = 0; i < z.length; i++) {
             for (int j = 0; j < z[0].length; j++) {
-                if (true) {
-
+                if (y == i && x == j) {
+                    if (z[i][j].equals("R") || z[i][j].equals("R") || z[i][j].equals("Z") || z[i][j].equals("Z")
+                            || z[i][j].equals("S") || z[i][j].equals("S") || z[i][j].equals("Z") || z[i][j].equals("Z")
+                            || z[i][j].equals("PM") || z[i][j].equals("PM") || z[i][j].equals("EV0") || z[i][j].equals("EV1") || z[i][j].equals("EV2")
+                            || z[i][j].equals("EV0") || z[i][j].equals("PM") || z[i][j].equals("PM")) {
+                        System.out.println("Error, posicion incorrecta");
+                    } else {
+                        z[i][j] = "PM";
+                    }
                 }
             }
         }
@@ -35,7 +42,23 @@ public class evapm extends EVA{
 
     @Override
     public String[][] atacar(String[][] z, int x, int y) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i < z.length; i++) {
+            for (int j = 0; j < z[0].length; j++) {
+                if (y == i && x == j) {
+                    if (y == i + 1 || x == j + 1) {
+                        if (z[i][j].equals("R") || z[i][j].equals("R") || z[i][j].equals("Z") || z[i][j].equals("Z")
+                                || z[i][j].equals("S") || z[i][j].equals("S") || z[i][j].equals("Z") || z[i][j].equals("Z")) {
+                            z[i][j] = " ";
+                        } else {
+                            System.out.println("Error, no hay enemigo");
+                        }
+                    } else {
+                        System.out.println("Error, se salio de los limites");
+                    }
+                }
+            }
+        }
+        return z;
     }
-    
+
 }

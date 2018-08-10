@@ -24,12 +24,12 @@ public class eva00 extends EVA {
     public eva00(Color color, int productionDate, double altura, String alma, int ojos, String pais, int serie, double porcentajedamage) {
         super(color, productionDate, altura, alma, ojos, pais, serie, porcentajedamage);
     }
-    
+
     @Override
     public String[][] movimiento(String[][] z, int x, int y) {
         for (int i = 0; i < z.length; i++) {
             for (int j = 0; j < z[0].length; j++) {
-                if (true) {
+                if (y == i && x == j) {
                     
                 }
             }
@@ -41,5 +41,5 @@ public class eva00 extends EVA {
     public String[][] atacar(String[][] z, int x, int y) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }
