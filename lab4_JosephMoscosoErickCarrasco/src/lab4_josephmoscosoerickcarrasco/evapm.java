@@ -5,10 +5,30 @@
  */
 package lab4_josephmoscosoerickcarrasco;
 
+import java.awt.Color;
+
 /**
  *
  * @author Joseph
  */
-public class evapm {
+public class evapm extends EVA{
+
+    public evapm() {
+        super();
+    }
+
+    public evapm(Color color, int productionDate, double altura, String alma, int ojos, String pais, int serie, double porcentajedamage) {
+        super(color, productionDate, altura, alma, ojos, pais, serie, porcentajedamage);
+    }
+
+    @Override
+    public void movimiento() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void atacar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

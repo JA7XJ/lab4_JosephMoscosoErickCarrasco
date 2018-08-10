@@ -17,7 +17,7 @@ public class Piloto {
     private String EncargadoNerv;
     private String Escuela;
     private double sincronizacion;
-    EVA asignado;
+    private EVA asignado;
 
     public Piloto() {
     }

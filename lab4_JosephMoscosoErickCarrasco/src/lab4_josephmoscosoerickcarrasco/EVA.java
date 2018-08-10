@@ -6,7 +6,7 @@ import java.awt.Color;
  *
  * @author erick
  */
-public class EVA {
+public abstract class EVA {
     private Color color;
     private int productionDate;
     private double altura;
@@ -15,8 +15,21 @@ public class EVA {
     private String pais;
     private int serie;
     private double porcentajedamage;
-
+    private Piloto piloto;
+    
     public EVA() {
+    }
+
+    public EVA(Color color, int productionDate, double altura, String alma, int ojos, String pais, int serie, double porcentajedamage, Piloto piloto) {
+        this.color = color;
+        this.productionDate = productionDate;
+        this.altura = altura;
+        this.alma = alma;
+        this.ojos = ojos;
+        this.pais = pais;
+        this.serie = serie;
+        this.porcentajedamage = porcentajedamage;
+        this.piloto = piloto;
     }
 
     public EVA(Color color, int productionDate, double altura, String alma, int ojos, String pais, int serie, double porcentajedamage) {
@@ -30,6 +43,14 @@ public class EVA {
         this.porcentajedamage = porcentajedamage;
     }
 
+    public Piloto getPiloto() {
+        return piloto;
+    }
+
+    public void setPiloto(Piloto piloto) {
+        this.piloto = piloto;
+    }
+    
     public Color getColor() {
         return color;
     }
@@ -98,6 +119,7 @@ public class EVA {
     public String toString() {
         return "EVA{" + "color=" + color + ", productionDate=" + productionDate + ", altura=" + altura + ", alma=" + alma + ", ojos=" + ojos + ", pais=" + pais + ", serie=" + serie + ", porcentajedamage=" + porcentajedamage + '}';
     }
-    
+    public abstract void movimiento();
+    public abstract void atacar();
     
 }

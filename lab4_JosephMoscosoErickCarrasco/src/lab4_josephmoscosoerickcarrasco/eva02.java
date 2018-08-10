@@ -5,10 +5,34 @@
  */
 package lab4_josephmoscosoerickcarrasco;
 
+import java.awt.Color;
+
 /**
  *
  * @author Joseph
  */
-public class eva02 {
+public class eva02 extends EVA {
+
+    public eva02() {
+        super();
+    }
+
+    public eva02(Color color, int productionDate, double altura, String alma, int ojos, String pais, int serie, double porcentajedamage, Piloto piloto) {
+        super(color, productionDate, altura, alma, ojos, pais, serie, porcentajedamage, piloto);
+    }
+
+    public eva02(Color color, int productionDate, double altura, String alma, int ojos, String pais, int serie, double porcentajedamage) {
+        super(color, productionDate, altura, alma, ojos, pais, serie, porcentajedamage);
+    }
+    
+    @Override
+    public void movimiento() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void atacar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

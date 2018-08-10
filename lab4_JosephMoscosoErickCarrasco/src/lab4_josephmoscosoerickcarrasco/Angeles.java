@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author erick
  */
-public class Angeles {
+public abstract class Angeles {
     private Color color;
     private String descripcione;
     private String colorsangre;
@@ -93,5 +93,6 @@ public class Angeles {
     public String toString() {
         return "Angeles{" + "color=" + color + ", descripcione=" + descripcione + ", colorsangre=" + colorsangre + ", fecha=" + fecha + ", nombre=" + nombre + ", volar=" + volar + ", potencia=" + potencia + '}';
     }
-    
+    public abstract void movimiento();
+    public abstract void atacar();
 }

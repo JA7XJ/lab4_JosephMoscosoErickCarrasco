@@ -5,10 +5,29 @@
  */
 package lab4_josephmoscosoerickcarrasco;
 
+import java.awt.Color;
+
 /**
  *
  * @author Joseph
  */
-public class ramiel {
+public class ramiel extends Angeles {
+
+    public ramiel() {
+    }
+
+    public ramiel(Color color, String descripcione, String colorsangre, String fecha, String nombre, String volar, int potencia) {
+        super(color, descripcione, colorsangre, fecha, nombre, volar, potencia);
+    }
+
+    @Override
+    public void movimiento() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void atacar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
