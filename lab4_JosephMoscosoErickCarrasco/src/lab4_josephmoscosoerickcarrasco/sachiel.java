@@ -21,12 +21,12 @@ public class sachiel extends Angeles{
     }
 
     @Override
-    public void movimiento() {
+    public String[][] movimiento(String[][] x) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void atacar() {
+    public String[][] atacar(String[][] x) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
