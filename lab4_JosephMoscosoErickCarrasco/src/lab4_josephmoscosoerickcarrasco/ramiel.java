@@ -29,7 +29,7 @@ public class ramiel extends Angeles {
                             || z[i][j].equals("S") || z[i][j].equals("S") || z[i][j].equals("Z") || z[i][j].equals("Z")
                             || z[i][j].equals("PM") || z[i][j].equals("PM") || z[i][j].equals("EV0") || z[i][j].equals("EV1") || z[i][j].equals("EV2")
                             || z[i][j].equals("EV0") || z[i][j].equals("PM") || z[i][j].equals("PM")) {
-                        z[i][j] = "EV0";
+                        z[i][j] = "R";
                     } else {
                         System.out.println("Error, posicion incorrecta");
                     }

@@ -27,12 +27,37 @@ public class eva02 extends EVA {
 
     @Override
     public String[][] movimiento(String[][] z, int x, int y) {
-        for (int i = 0; i < z.length; i++) {
-            for (int j = 0; j < z[0].length; j++) {
-                if (true) {
+        int posx = x;
+        int posy = y;
+        if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                || z[x][y].equals("PM") || z[x][y].equals("PM") || z[x][y].equals("EV0") || z[x][y].equals("EV1") || z[x][y].equals("EV2")
+                || z[x][y].equals("EV0") || z[x][y].equals("PM") || z[x][y].equals("PM")) {
+            System.out.println("Error, posicion incorrecta");
 
-                }
-            }
+        }if (x== posx+1 && y == posy+2) {
+            z[x][y]= "EV2";
+        }
+        if (x==posx+2 && y == posy+1) {
+            z[x][y]= "EV2";
+        }
+        if (x==posx+1 && y == posy-2) {
+            z[x][y]= "EV2";
+        }
+        if (x==posx+2 && y == posy-1) {
+            z[x][y]= "EV2";
+        }
+        if (x == posx-1 && y == posy+2) {
+            z[x][y]= "EV2";
+        }
+        if (x== posx-2 && y == posy+1) {
+            z[x][y]= "EV2";
+        }
+        if (x== posx-1 && y == posy-2) {
+            z[x][y]= "EV2";
+        }
+        if (x==posx-2 && y == posy-1) {
+            z[x][y]= "EV2";
         }
         return z;
     }
