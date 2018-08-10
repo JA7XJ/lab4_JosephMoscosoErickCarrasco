@@ -18,8 +18,10 @@ public class Lab4_JosephMoscosoErickCarrasco {
      * @param args the command line arguments
      */
     static Scanner sc = new Scanner(System.in);
-    ArrayList<EVA> ev=new ArrayList();
-    ArrayList<Angeles> an=new ArrayList();
+    ArrayList<EVA> ev = new ArrayList();
+    ArrayList<Angeles> an = new ArrayList();
+    ArrayList<Piloto> pil = new ArrayList();
+
     public static void main(String[] args) {
         // TODO code application logic here
         inicializar();
@@ -122,8 +124,9 @@ public class Lab4_JosephMoscosoErickCarrasco {
         }
         System.out.println("Fin del programa");
     }
-    public static void inicializar(){
-        
+
+    public static void inicializar() {
+
     }
 
 }
