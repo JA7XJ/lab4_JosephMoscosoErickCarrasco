@@ -21,7 +21,7 @@ public class ramiel extends Angeles {
     }
 
     @Override
-    public String[][] movimiento(String[][] z, int x, int y) {
+    public String[][] movimiento(String[][] z, int x, int y, int ox, int oy) {
         for (int i = 0; i < z.length; i++) {
             for (int j = 0; j < z[0].length; j++) {
                 if (y == i && x == j) {
@@ -40,7 +40,7 @@ public class ramiel extends Angeles {
     }
 
     @Override
-    public String[][] atacar(String[][] z, int x, int y) {
+    public String[][] atacar(String[][] z, int x, int y, int ox, int oy) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
