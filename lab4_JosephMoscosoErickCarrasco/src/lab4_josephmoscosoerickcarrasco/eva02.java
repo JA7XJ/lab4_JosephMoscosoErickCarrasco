@@ -26,7 +26,7 @@ public class eva02 extends EVA {
     }
 
     @Override
-    public String[][] movimiento(String[][] z, int x, int y) {
+    public String[][] movimiento(String[][] z, int x, int y, int ox, int oy) {
         int posx = x;
         int posy = y;
         if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
@@ -57,13 +57,13 @@ public class eva02 extends EVA {
             z[x][y]= "EV2";
         }
         if (x==posx-2 && y == posy-1) {
-            z[x][y]= "EV2";
+            
         }
         return z;
     }
 
     @Override
-    public String[][] atacar(String[][] z, int x, int y) {
+    public String[][] atacar(String[][] z, int x, int y, int ox, int oy) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

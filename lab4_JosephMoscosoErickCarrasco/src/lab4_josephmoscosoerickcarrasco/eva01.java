@@ -27,13 +27,38 @@ public class eva01 extends EVA{
     
     @Override
     public String[][] movimiento(String[][] z, int x, int y, int ox, int oy) {
-        for (int i = 0; i < z.length; i++) {
-            for (int j = 0; j < z[0].length; j++) {
-                if (true) {
-                    
-                }
-            }
+        if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                || z[x][y].equals("PM") || z[x][y].equals("PM") || z[x][y].equals("EV0") || z[x][y].equals("EV1") || z[x][y].equals("EV2")
+                || z[x][y].equals("EV0") || z[x][y].equals("PM") || z[x][y].equals("PM")) {
+            System.out.println("Error, posicion incorrecta");
+
         }
+        if (ox+3==x && oy+3==y) {
+            z[x][y]= "EV1";
+            z[ox][oy]=" ";
+        }
+        if (ox+3==x && oy==y) {
+            z[x][y]= "EV1";
+            z[ox][oy]=" ";
+        }
+        if (ox==x && oy+3==y) {
+            z[x][y]= "EV1";
+            z[ox][oy]=" ";
+        }
+        if (ox-3==x && oy-3==y) {
+            z[x][y]= "EV1";
+            z[ox][oy]=" ";
+        }
+        if (ox-3==x && oy+3==y) {
+            z[x][y]= "EV1";
+            z[ox][oy]=" ";
+        }
+        if (ox+3==y && oy-3==y) {
+            z[x][y]= "EV1";
+            z[ox][oy]=" ";
+        }
+        
         return z;
     }
 
