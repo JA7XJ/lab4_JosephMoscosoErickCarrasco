@@ -187,7 +187,7 @@ public class Lab4_JosephMoscosoErickCarrasco {
             }
             if (op == 4) {
                 //SIMULACION
-                int lives1 = 8;
+                /*int lives1 = 8;
                 int lives2 = 8;
                 boolean simulador = true;
                 int turn = 1;
@@ -206,7 +206,7 @@ public class Lab4_JosephMoscosoErickCarrasco {
                         }
                     }
 
-                } while (simulador);
+                } while (simulador);*/
             }
             if (op == 5) {
                 c = 0;
