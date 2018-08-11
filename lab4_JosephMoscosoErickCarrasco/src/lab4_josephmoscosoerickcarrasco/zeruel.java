@@ -24,8 +24,8 @@ public class zeruel extends Angeles {
     public String[][] movimiento(String[][] z, int x, int y, int ox, int oy) {
         for (int i = 0; i < z.length; i++) {
             for (int j = 0; j < z[0].length; j++) {
-                if (true) {
-
+                if (oy==oy+2) {
+                    z[i][j]="Z";
                 }
             }
         }

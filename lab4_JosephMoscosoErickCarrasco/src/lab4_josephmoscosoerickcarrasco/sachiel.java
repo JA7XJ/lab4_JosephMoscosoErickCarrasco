@@ -24,8 +24,10 @@ public class sachiel extends Angeles{
     public String[][] movimiento(String[][] z, int x, int y, int ox, int oy) {
         for (int i = 0; i < z.length; i++) {
             for (int j = 0; j < z[0].length; j++) {
-                if (true) {
-
+                if (Math.abs(oy-oy+1)==Math.abs(ox-ox+1)) {
+                    z[i][j]="S";
+                }else{
+                    System.out.println("Error, no se puede mover");
                 }
             }
         }
