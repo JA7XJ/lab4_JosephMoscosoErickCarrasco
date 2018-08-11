@@ -64,7 +64,66 @@ public class eva02 extends EVA {
 
     @Override
     public String[][] atacar(String[][] z, int x, int y, int ox, int oy) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        if (x == ox - 2 && y == oy - 2) {
+            if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                    || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")) {
 
-}
+                z[x][y] = " ";
+            }
+        }
+        if (x== ox -2 && y == oy-1) {
+            if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                    || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")) {
+
+                z[x][y] = " ";
+            }
+        }
+        if (x== ox-1 && y==oy-1) {
+            if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                    || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")) {
+
+                z[x][y] = " ";
+            }
+        }
+        
+        if (x == ox - 2 && y == oy + 2) {
+            if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                    || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")) {
+
+                z[x][y] = " ";
+            }
+        }
+        if (x== ox -2 && y == oy+1) {
+            if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                    || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")) {
+
+                z[x][y] = " ";
+            }
+        }
+        if (x== ox-1 && y==oy+1) {
+            if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                    || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")) {
+
+                z[x][y] = " ";
+            }
+        }
+        
+        if (x== ox-2 && y==oy) {
+            if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                    || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")) {
+
+                z[x][y] = " ";
+            }
+        }
+        if (x== ox-1 && y==oy) {
+            if (z[x][y].equals("R") || z[x][y].equals("R") || z[x][y].equals("Z") || z[x][y].equals("Z")
+                    || z[x][y].equals("S") || z[x][y].equals("S") || z[x][y].equals("Z") || z[x][y].equals("Z")) {
+
+                z[x][y] = " ";
+            }
+        }
+        return z;
+        }
+        
+    }
+    
